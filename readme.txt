@@ -1,6 +1,4 @@
 jQuery Mobile (v1.2.0) Boilerplate
-Zak Angelle - http://www.nuclearhelix.com
-https://github.com/zakangelle
 
 SUMMARY:
 * A basic starter template for developing with jQuery Mobile. Comes with all the good stuff: mobile viewport, web-app-capable meta, Apple icon includes, FastClick, and more.
