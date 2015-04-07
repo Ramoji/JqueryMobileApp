@@ -1,8 +1,8 @@
-for (i = 0; i <= 50; i++) {
-    $("#something_select").append('<option value="some' + i + '">Something ' + i + '</option>');
-}
+$(document).on('pageinit','#home',function(event) {
 
-$("#something_select").selectmenu('refresh', true);
+for (i = 0; i <= 50; i++) {
+   $("#something_select").append('<option value="some' + i + '">Something ' + i + '</option>');
+}
 
 addAnotherThings();
 addFinalThings();
@@ -57,9 +57,9 @@ $('#something_select').change(function() {
 $('#another_select').change(function() {
     var selectedAnother = $(this).val();
     var selectFirst = 0;
-    addTheaters();
+    addFinalThings();
 
-    $("#theater_select option").each(function() {
+    $("#final_select option").each(function() {
         if ($(this).attr('id') != selectedAnother) {
             $(this).remove();
         } else {
@@ -72,6 +72,8 @@ $('#another_select').change(function() {
     $("#final_select").parent().parent().show();
 
     if ($('#final_select option').size() == 0) {
-        $('#final_select').append('<option value="nothing">No things for Something</option>');
+        $('#final_select').append('<option value="nothing">No things for another thing</option>');
     }
 });/* Custom scripts here */
+
+});
