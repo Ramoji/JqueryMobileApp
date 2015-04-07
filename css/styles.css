@@ -1,1 +1,11 @@
 /* Custom styles here */
+.bgimg {
+    background-image: url(http://dummyimage.com/5x5/a80c10/ffffff.png);
+    background-repeat:repeat-x;
+    background-position:100% 120px, 100% -120px;
+    background-size:100% 180px;
+}
+.logo-font {
+    font-size:x-large;
+    font-weight:bold;
+}
